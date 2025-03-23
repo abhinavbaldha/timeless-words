@@ -63,11 +63,11 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-navy text-balance">
-            <div className="reveal-text" ref={addToRefs}>
-              <span>Own Your Words.</span>
+            <div className="reveal-text overflow-hidden" ref={addToRefs}>
+              <span className="inline-block transform translate-y-0 opacity-100">Own Your Words.</span>
             </div>
-            <div className="reveal-text" ref={addToRefs}>
-              <span className="text-copper">Build Your Legacy.</span>
+            <div className="reveal-text overflow-hidden" ref={addToRefs}>
+              <span className="inline-block transform translate-y-0 opacity-100 text-copper">Build Your Legacy.</span>
             </div>
           </h1>
 
