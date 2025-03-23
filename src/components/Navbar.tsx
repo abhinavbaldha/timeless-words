@@ -29,45 +29,57 @@ const Navbar = () => {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link 
-          to="/" 
+        <a 
+          href="#home" 
           className="text-navy text-xl font-semibold tracking-tight"
         >
           Inscribe.so
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link 
-            to="/" 
+          <a 
+            href="#features" 
             className="text-navy/80 hover:text-navy transition-colors duration-200"
           >
             Features
-          </Link>
-          <Link 
-            to="/" 
+          </a>
+          <a 
+            href="#problem-solution" 
             className="text-navy/80 hover:text-navy transition-colors duration-200"
           >
-            Pricing
-          </Link>
-          <Link 
-            to="/" 
+            Why Inscribe
+          </a>
+          <a 
+            href="#testimonials" 
             className="text-navy/80 hover:text-navy transition-colors duration-200"
           >
-            About
-          </Link>
-          <Link 
-            to="/" 
+            Testimonials
+          </a>
+          <a 
+            href="https://inscribe.so/blog" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-navy/80 hover:text-navy transition-colors duration-200"
           >
             Blog
-          </Link>
-          <Link 
-            to="/" 
+          </a>
+          <a 
+            href="https://inscribe.so/login" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-navy/80 hover:text-navy transition-colors duration-200"
+          >
+            Sign In
+          </a>
+          <a 
+            href="https://inscribe.so/register" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="premium-button text-offwhite bg-navy px-5 py-2 rounded-md hover:bg-navy-light transition-all duration-300"
           >
             Start Writing
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -83,41 +95,54 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-md py-4 px-6 animate-fade-in">
           <div className="flex flex-col space-y-4">
-            <Link 
-              to="/" 
+            <a 
+              href="#features" 
               className="text-navy/80 hover:text-navy transition-colors duration-200 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Features
-            </Link>
-            <Link 
-              to="/" 
+            </a>
+            <a 
+              href="#problem-solution" 
               className="text-navy/80 hover:text-navy transition-colors duration-200 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Pricing
-            </Link>
-            <Link 
-              to="/" 
+              Why Inscribe
+            </a>
+            <a 
+              href="#testimonials" 
               className="text-navy/80 hover:text-navy transition-colors duration-200 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About
-            </Link>
-            <Link 
-              to="/" 
+              Testimonials
+            </a>
+            <a 
+              href="https://inscribe.so/blog" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-navy/80 hover:text-navy transition-colors duration-200 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Blog
-            </Link>
-            <Link 
-              to="/" 
+            </a>
+            <a 
+              href="https://inscribe.so/login" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-navy/80 hover:text-navy transition-colors duration-200 py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Sign In
+            </a>
+            <a 
+              href="https://inscribe.so/register" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="premium-button text-offwhite bg-navy px-5 py-2 rounded-md hover:bg-navy-light transition-all duration-300 text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Start Writing
-            </Link>
+            </a>
           </div>
         </div>
       )}

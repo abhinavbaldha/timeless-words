@@ -47,7 +47,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="pt-32 pb-20 md:pt-40 md:pb-28 px-6 md:px-12 max-w-7xl mx-auto relative">
+    <section id="home" className="pt-32 pb-20 md:pt-40 md:pb-28 px-6 md:px-12 max-w-7xl mx-auto relative">
       {/* Background decoration */}
       <div className="absolute inset-0 max-w-full mx-auto">
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-copper/10 rounded-full blur-3xl opacity-70"></div>
@@ -63,11 +63,15 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-navy text-balance">
-            <div className="reveal-text overflow-hidden" ref={addToRefs}>
-              <span className="inline-block transform translate-y-0 opacity-100">Own Your Words.</span>
+            <div className="reveal-text-container overflow-hidden mb-2" ref={addToRefs}>
+              <div className="reveal-text" ref={addToRefs}>
+                <span className="inline-block">Own Your Words.</span>
+              </div>
             </div>
-            <div className="reveal-text overflow-hidden" ref={addToRefs}>
-              <span className="inline-block transform translate-y-0 opacity-100 text-copper">Build Your Legacy.</span>
+            <div className="reveal-text-container overflow-hidden mb-2" ref={addToRefs}>
+              <div className="reveal-text" ref={addToRefs}>
+                <span className="inline-block text-copper">Build Your Legacy.</span>
+              </div>
             </div>
           </h1>
 
@@ -76,18 +80,20 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-8 animate-on-scroll" ref={addToRefs}>
-            <Link
-              to="/"
+            <a
+              href="https://inscribe.so/register"
+              target="_blank"
+              rel="noopener noreferrer"
               className="premium-button flex items-center gap-2 bg-navy text-offwhite px-6 py-3 rounded-md text-base font-medium hover:bg-navy-light"
             >
               Start Writing <ArrowRight size={18} />
-            </Link>
-            <Link
-              to="/"
+            </a>
+            <a
+              href="#features"
               className="flex items-center gap-2 bg-transparent text-navy border border-navy/20 px-6 py-3 rounded-md text-base font-medium hover:bg-navy/5 transition-colors duration-300"
             >
               See a Demo <ArrowRight size={18} />
-            </Link>
+            </a>
           </div>
         </div>
 
